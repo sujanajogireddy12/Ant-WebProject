@@ -16,7 +16,7 @@ pipeline {
           emailext(
 	   subject: "${env.JOB_NAME} [${env.BUILD_NUMBER}] Successfull",
            body: "${env.JOB_NAME} [${env.BUILD_NUMBER}] ${env.BUILD_URL}",
-		  to: "${env.DEFAULT_RECIPIENTS},devopstrainingblr@gmail.com"
+		  to: "${env.DEFAULT_RECIPIENTS},devopstrainingblr@gmail.com,prakash.tsjv@gmail.com"
           )
         }
 	failure{
